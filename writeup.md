@@ -115,7 +115,7 @@ Folloing figure shows the result of passing the test images though my pipeline. 
 ### Video Implementation
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
-This [link](./project_out_frame3.mp4) show the video output with the same exact pipleline developed for a single frame. The result shows jittery detections and some false positives. This [link](./project_output_3_1.mp4) shows the video where I've processed multiple frame at a time to smooth out the result. 
+This [link](./project_out_frame3.mp4) show the video output with the same exact pipleline developed for a single frame. The result shows jittery detections and some false positives. This [link](./project_output_smooth_3.mp4) shows the video where I've processed multiple frame at a time to smooth out the result. 
 
 
 #### 2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
