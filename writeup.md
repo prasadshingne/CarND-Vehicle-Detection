@@ -67,17 +67,17 @@ I picked the following parameters (cells 6 and 7) that produced a high test accu
 | Classifier  | LinearSVC      |
 | Scalar  | StandardScaler     |
 
-These parameters led to a feature length of 1536 with a feature extraction time of ~90 seconds, training time of 4.5 seconds and test accuracy of 98.2%.
+These parameters led to a feature length of 1536 with a feature extraction time of ~90 seconds, training time of 4.5 seconds and test accuracy of 98.03%.
 
 #### 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
 
-In cell 7 I trained a linear SVM using HOG, color and spatial features to get a test accuracy of 98.2%.
+In cell 7 I trained a linear SVM using HOG, color and spatial features to get a test accuracy of 98.03%.
 
 ### Sliding Window Search
 
 #### 1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
 
-I implemented the more efficient sliding window search approach based on the lesson material (Cell 9). Here we extract HOG features are extracted just once for each of the small set of predetermined window sizes based on the scale argument and then can be subsampled for overlaying windows. The function returns a list of rectangle objects corresponding to the windows that generated 'car' prediction. I run the same function four times for different configurations of (y_start, y_stop) and scale. After some trial and error the following configurations are used to aggregate all rectangles that made a 'car' prediction.
+I implemented the more efficient sliding window search approach based on the lesson material (Cell 9). Here we extract HOG features are extracted just once for each of the small set of predetermined window sizes based on the scale argument and then can be subsampled for overlaying windows. The function returns a list of rectangle objects corresponding to the windows that generated 'car' prediction. I run the same function four times (cell 11) for different configurations of (y_start, y_stop) and scale. After some trial and error the following configurations are used to aggregate all rectangles that made a 'car' prediction.
 
 |Scale     | Y_start    |  Y_stop |
 |:--------:|:----------:|:-------:|
@@ -120,7 +120,7 @@ This [link](./project_out_frame3.mp4) show the video output with the same exact 
 
 #### 2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
 
-In cell xx and cell xx1 shows the code for processing multiple frames at ta time. The code is the same as that for processing a single frame except for storing detections from previous 10 frames. These detections are combined and added to the heatmap and a threshold of yy seemed to produce the best result. 
+In cell 34 and cell 35 shows the code for processing multiple frames at a time. The code is the same as that for processing a single frame except for storing detections from previous 15 frames. These detections are combined and added to the heatmap and a threshold of yy seemed to produce the best result. 
 
 ---
 
