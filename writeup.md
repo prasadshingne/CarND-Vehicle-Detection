@@ -21,7 +21,7 @@ The goals / steps of this project are the following:
 [image9]: ./output_images/frame_pipeline_output.jpg
 
 [video1]: ./project_out_frame3.mp4
-[video2]: ./project_output_3_1.mp4
+[video2]: ./project_output_smooth_3.mp4
 
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
