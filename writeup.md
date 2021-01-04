@@ -143,5 +143,5 @@ In cell 34 and cell 35 shows the code for processing multiple frames at a time. 
 1. Updated python script to perform HOG feature extraction and vehicle detection on my_test_video_*.mp4 files
 
 2. Added script (yolo3_detect-1.py) to use yolov3 for vehicle detection. The script is based on - 
-	i.  https://pjreddie.com/darknet/yolo/
-	ii. https://github.com/nandinib1999/object-detection-yolo-opencv
+	1. https://pjreddie.com/darknet/yolo/
+	2. https://github.com/nandinib1999/object-detection-yolo-opencv
