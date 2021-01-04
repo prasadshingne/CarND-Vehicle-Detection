@@ -137,3 +137,11 @@ In cell 34 and cell 35 shows the code for processing multiple frames at a time. 
 4. The pipeline can be improved by increasing the training data and the type of training data. X-dimension maybe used for heatmap and thresholding if your own position is known with respect to traffic. A threshold changing with position may help.
 
 5. A deep-learning approach with CNNs may perform the best.
+
+
+### January 4, 2021
+1. Updated python script to perform HOG feature extraction and vehicle detection on my_test_video_*.mp4 files
+
+2. Added script (yolo3_detect-1.py) to use yolov3 for vehicle detection. The script is based on - 
+	i.  https://pjreddie.com/darknet/yolo/
+	ii. https://github.com/nandinib1999/object-detection-yolo-opencv
